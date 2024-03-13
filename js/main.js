@@ -38,10 +38,11 @@ document.addEventListener('DOMContentLoaded', displayNone(section1))
 document.getElementById('main-button').addEventListener('click', () => {displayNone(section2)})
 
 calidad = document.querySelectorAll('.calidad')
+
 calidad.forEach((button, i) => {
     i+=1;
     button.addEventListener('click', () => {
         sum(info.calidad[`btn${i}`])
-        displayNone(section2)
+        displayNone(section3)
     })
 })
