@@ -20,7 +20,7 @@ section {
 }
 #section1 {
     margin: auto;
-    display: grid;
+    display: none;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 3fr;
 }
@@ -50,19 +50,19 @@ section {
     background-color: blue;
     border-style: none;
 }
-#section2 {
+.section {
     margin: auto;
     text-align: center;
 }
-#section2 .info-box-2{
+.section .info-box{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-#section2 h1{
+.section h1{
     font-size: 40px;
     margin-bottom: 40px;
 }
-#section2 .info-box-2 div {
+.section .info-box div {
     margin: auto;
     width: 80%;
     display: flex;
@@ -71,11 +71,11 @@ section {
     cursor: pointer;
     transition: .3s ease;
 }
-#section2 .info-box-2 div:hover {
+.section .info-box div:hover {
     padding-bottom: 10px;
     background-color: rgb(75, 75, 75);
 }
-#section2 img {
+.section img {
     width: 200px;
     margin-bottom: 20px;
 }
